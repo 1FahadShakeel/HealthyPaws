@@ -1,0 +1,60 @@
+.header{
+    background-image: url("../../images/dogHeader.jpeg");
+    background-size: cover;
+}
+.headerHeading {
+    color: rgb(30, 93, 132);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    margin: 0px;
+  }
+  #shpac{
+    width: 50px;
+  }
+  .input-box{
+width: 60px;
+display: inline-block;
+  }
+  .dogImg{
+    width: 70px;
+  }
+  .selectedDogImg{
+    width: 70px;
+   
+  }
+  .selecteddogContainer{
+    border: 2px solid #1E5D84;
+    border-radius: 10px;
+    display: inline-block;
+    width: 70px;
+    
+    margin-left: 5px;
+    text-align: center;
+    
+    
+ }
+ .dogContainer{
+    display: inline-block;
+    width: 70px;
+    
+    margin-left: 5px;
+    text-align: center;
+ }
+ .form-range{
+    width:46%;
+   
+ }
+
+ @media (max-width: 600px) {
+.dogImg{
+    width: 40px;
+  }
+  .dogContainer{
+  
+    width: 44px;
+    
+    
+ }
+
+ }

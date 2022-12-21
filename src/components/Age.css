@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+.p2{
+    font-weight: 400;
+    font-size: 13px !important;
+}
+#Header{
+    color: #11486E;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#ImageText{
+    background-color: rgb(255, 225, 128);
+}
+.PuppyButton{
+    width: 110px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #11486E;
+    color: white;
+    border: none;
+   font-family: 'Poppins', sans-serif;
+}
+.PuppyButton2{
+    width: 110px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #aac5d9;
+    color: #11486E;
+    border: none;
+   font-family: 'Poppins', sans-serif;
+}
+.AdultPuppyButton{
+    width: 110px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #aac5d9;
+    color: #11486E;
+    border: none;
+   font-family: 'Poppins', sans-serif;
+}
+.AdultPuppyButton2{
+    width: 110px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #11486E;
+    color: white;
+    border: none;
+   font-family: 'Poppins', sans-serif;
+}
+.SeniorPuppyButton{
+    width: 110px;
+    height: 45px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: 600;
+    background-color: #aac5d9;
+    color: #11486E;
+    border: none;
+   font-family: 'Poppins', sans-serif;
+}
+.SeniorPuppyButton2{
+    width: 110px;
+    height: 45px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: medium;
+    background-color: #11486E;
+    color: white;
+    border: none;
+   font-family: 'Poppins', sans-serif;
+}
+#PuppyInput1{
+   font-family: 'Poppins', sans-serif;
+    width: 50px; 
+    height: 50px;
+    display: inline-block;
+    background-color: rgb(234, 229, 229);
+    margin-right: 10px;
+}
+#PuppyInput2{
+   font-family: 'Poppins', sans-serif;
+    width: 50px; 
+    height: 50px;
+    display: inline-block;
+    background-color: rgb(234, 229, 229);
+    margin-right: 10px;
+}
+#PuppyAge1{
+   font-family: 'Poppins', sans-serif;
+    color: #11486E;
+    font-weight: bold;
+    margin-right: 30px;
+}
+#PuppyAge2{
+   font-family: 'Poppins', sans-serif;
+    color: #11486E;
+    font-weight: bold;
+}
+#CheckBox{
+    width: 50px;
+    height: 25px;
+    border: 2px solid #11486E;
+    accent-color: #11486E;
+}
+#CheckBoxText{
+   font-family: 'Poppins', sans-serif;
+    color: #11486E;
+    font-size: medium;
+}
+#FreshFact{
+    background-color: rgb(251, 248, 233);
+    color: #85614D;
+   font-family: 'Poppins', sans-serif;
+}
+#FreshFact3{
+    width: 80px;
+    height: 50px;
+    
+  margin-bottom: 90px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .PuppyButton{
+        width: 90px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: medium;
+        background-color: #11486E;
+        color: white;
+        border: none;
+       font-family: 'Poppins', sans-serif;
+    }
+    .PuppyButton2{
+        width: 90px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: medium;
+        background-color: #aac5d9;
+        color: #11486E;
+        border: none;
+       font-family: 'Poppins', sans-serif;
+    }
+    .AdultPuppyButton{
+        width: 90px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: medium;
+        background-color: #aac5d9;
+        color: #11486E;
+        border: none;
+       font-family: 'Poppins', sans-serif;
+    }
+    .AdultPuppyButton2{
+        width: 90px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: medium;
+        background-color: #11486E;
+        color: white;
+        border: none;
+       font-family: 'Poppins', sans-serif;
+    }
+    .SeniorPuppyButton{
+        width: 90px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: medium;
+        background-color: #aac5d9;
+        color: #11486E;
+        border: none;
+       font-family: 'Poppins', sans-serif;
+        margin-right: 10px;
+    }
+    .SeniorPuppyButton2{
+        width: 90px;
+        height: 45px;
+        border-radius: 20px;
+        font-size: medium;
+        background-color: #11486E;
+        color: white;
+        border: none;
+       font-family: 'Poppins', sans-serif;
+        margin-right: 10px;
+    }
+    #DocDesc{
+        height: 200px;
+        width: 350px;
+    }
+    #FreshFact3{
+        width: 60px;
+        height: 40px;
+    }
+}
