@@ -153,9 +153,9 @@ function Allergies() {
            <div className="row">
             <div className="col-md-4"></div>
             <div className="col-md-4">
-            <NavLink  to='/Activity' type="button" className="btn  back"><i className="fa fa-angle-left"></i>BACK</NavLink>
+            <NavLink  to='/Activity' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink onClick={""} to='/health-issues'  type="button" className="btn  float-end continue">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink onClick={""} to='/health-issues'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

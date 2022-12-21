@@ -17,8 +17,8 @@ let dogNameHandler1 = (e) => {
 };
 
   let anotherDogHandler1 = () => {
-    // alert("anotherDogHandler1");s
-    // document.getElementById("form2").classList.remove("d-none");
+    alert("anotherDogHandler1");
+    document.getElementById("form2").classList.remove("d-none");
   };
 
   let anotherDogHandler2 = () => {

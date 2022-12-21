@@ -2,6 +2,12 @@
 * {
   font-family: 'Poppins', sans-serif;
 }
+.Shpac{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 #A{    
     font-weight: bold;
     background-color: orange;
@@ -14,10 +20,10 @@
 }
 #BreedCheckBox{
     border: 1px solid #11486E;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     accent-color: #11486E;
-    margin-bottom: 12px;
+    
 }
 #BreedBoxText{
     color: #11486E;

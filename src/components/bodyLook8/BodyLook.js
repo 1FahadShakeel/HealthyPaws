@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import dogFoot from"../../images/dogFoot.svg"
 import sweetPotato from "../../images/sweetPotato.svg";
 
 import { NavLink } from "react-router-dom";
@@ -17,9 +18,9 @@ const BodyLook = () => {
 
   let dog1Handler=()=>{
 
-    document.getElementById("dog1").classList.add("selectedDog");
-    document.getElementById("dog3").classList.remove("selectedDog");
-    document.getElementById("dog2").classList.remove("selectedDog");
+    // document.getElementById("dog1").classList.add("selectedDog");
+    // document.getElementById("dog3").classList.remove("selectedDog");
+    // document.getElementById("dog2").classList.remove("selectedDog");
 
     document.getElementById("colordog1").classList.remove("d-none");
     document.getElementById("dog1Colorless").classList.add("d-none");
@@ -41,9 +42,9 @@ const BodyLook = () => {
 
 
   let dog2Handler=()=>{
-    document.getElementById("dog2").classList.add("selectedDog");
-    document.getElementById("dog3").classList.remove("selectedDog");
-    document.getElementById("dog1").classList.remove("selectedDog");
+    // document.getElementById("dog2").classList.add("selectedDog");
+    // document.getElementById("dog3").classList.remove("selectedDog");
+    // document.getElementById("dog1").classList.remove("selectedDog");
 
     document.getElementById("dog2WithColor").classList.remove("d-none");
     document.getElementById("dog2Colorless").classList.add("d-none");
@@ -63,9 +64,9 @@ const BodyLook = () => {
   }
   let dog3Handler=()=>{
 
-    document.getElementById("dog3").classList.add("selectedDog");
-    document.getElementById("dog1").classList.remove("selectedDog");
-    document.getElementById("dog2").classList.remove("selectedDog");
+    // document.getElementById("dog3").classList.add("selectedDog");
+    // document.getElementById("dog1").classList.remove("selectedDog");
+    // document.getElementById("dog2").classList.remove("selectedDog");
 
     document.getElementById("sizeColorDog3").classList.remove("d-none");
     document.getElementById("sizeDog3").classList.add("d-none");
@@ -103,7 +104,7 @@ const BodyLook = () => {
          
 
           <h1 className="text-center mt-5">
-          ------------<span>{localStorage.getItem("dogName")}</span> is.------------
+          ---------- <span>{localStorage.getItem("dogName")}</span> is... ----------
           </h1>
 
           {/* images */}
@@ -112,17 +113,17 @@ const BodyLook = () => {
             <div className='col-md-12'>
              
                 <div className='dogDiv ' id="dog1" onClick={dog1Handler}>
-                  <img className="dogSize " src={dog1} alt="" id='dog1Colorless' />
-                  <img className="d-none" id='colordog1' src={colordog1} alt="" />
+                  <img className="img-fluid " src={dog1} alt="" id='dog1Colorless' />
+                  <img className="img-fluid d-none" id='colordog1' src={colordog1} alt="" />
                   </div>
                 <div className='dogDiv ' id="dog2" onClick={dog2Handler}>
-                  <img className="dogSize " src={dog2} alt="" id='dog2Colorless' />
-                  <img className="dogSize d-none" src={colordog2} alt="" id='dog2WithColor' />
+                  <img className="img-fluid " src={dog2} alt="" id='dog2Colorless' />
+                  <img className="img-fluid d-none" src={colordog2} alt="" id='dog2WithColor' />
 
                   </div>
                 <div className='dogDiv ' onClick={dog3Handler} id="dog3"> 
-                <img className="  " id='sizeDog3' src={dog3} alt="" />
-                <img className=" d-none" id='sizeColorDog3' src={colordog3} alt="" />
+                <img className="  img-fluid" id='sizeDog3' src={dog3} alt="" />
+                <img className="img-fluid d-none" id='sizeColorDog3' src={colordog3} alt="" />
                 </div>
 
             </div>
@@ -175,9 +176,9 @@ const BodyLook = () => {
            <div className="row">
             <div className="col-md-4"></div>
             <div className="col-md-4">
-            <NavLink  to='/help' type="button" className="btn  back"><i className="fa fa-angle-left"></i>BACK</NavLink>
+            <NavLink  to='/help' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink onClick={""} to='/dog-Weight'  type="button" className="btn  float-end continue">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink onClick={""} to='/dog-Weight'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

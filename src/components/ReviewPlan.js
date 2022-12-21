@@ -439,7 +439,7 @@ let HideRecipeHandler=()=>{
       {/* Question 1 */}
       <div class="row mt-3" id="Question1">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <FontAwesomeIcon icon={faPlus} id="QuestionButtonPlus1" onClick={ShowQuestion1}/>
           <FontAwesomeIcon icon={faMinus} class="d-none" id="QuestionButtonMinus1" onClick={HideQuestion1}/>
           <p><b>How did you calculate my dog plan?</b></p>
@@ -447,7 +447,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row d-none" id="Answer1">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <p>
             Dogs are like snowflakes - no two are the same (and that's where the comparison ends really). We use details about your dog, 
             such as their age and their activity levels, in order to work out the perfect portion sizes and recipe mixes for them.
@@ -457,7 +457,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row">
       <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <hr id="Line1"/>
         </div>
       </div>
@@ -466,7 +466,7 @@ let HideRecipeHandler=()=>{
       {/* Question 2 */}
       <div class="row mt-3" id="Question2">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
         <FontAwesomeIcon icon={faPlus} id="QuestionButtonPlus2" onClick={ShowQuestion2}/>
         <FontAwesomeIcon icon={faMinus} class="d-none" id="QuestionButtonMinus2" onClick={HideQuestion2}/>
           <p><b>How many recipes can I choose?</b></p>
@@ -474,7 +474,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row d-none" id="Answer2">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <p>
           You can choose up to 7 recipes for your Intro box. We’ve already pre-selected 
           the recipes that we think are most suitable for your dog.
@@ -484,7 +484,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row">
       <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <hr id="Line2"/>
         </div>
       </div>
@@ -493,7 +493,7 @@ let HideRecipeHandler=()=>{
       {/* Question 3 */}
       <div class="row mt-3" id="Question3">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
         <FontAwesomeIcon icon={faPlus} id="QuestionButtonPlus3" onClick={ShowQuestion3}/>
         <FontAwesomeIcon icon={faMinus} class="d-none" id="QuestionButtonMinus3" onClick={HideQuestion3}/>
           <p><b>Can I change my recipe selection later?</b></p>
@@ -501,7 +501,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row d-none" id="Answer3">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <p>
             Yes - as a Butternut customer you will have your own account. You can log 
             in to your account at any time and adjust your chosen recipes.
@@ -511,7 +511,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row">
       <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <hr id="Line3"/>
         </div>
       </div>
@@ -520,7 +520,7 @@ let HideRecipeHandler=()=>{
       {/* Question 4 */}
       <div class="row mt-3" id="Question4">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
         <FontAwesomeIcon icon={faPlus} id="QuestionButtonPlus4" onClick={ShowQuestion4}/>
         <FontAwesomeIcon icon={faMinus} class="d-none" id="QuestionButtonMinus4" onClick={HideQuestion4}/>
           <p><b>Why is the gram amount different to my current food?</b></p>
@@ -528,7 +528,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row d-none" id="Answer4">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <p>
           The calorie density of different foods can vary quite a bit. With this in mind you may find that your dog requires a 
           different volume of our food to their current food in order to provide the correct number of calories for them.
@@ -538,7 +538,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row">
       <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <hr id="Line4"/>
         </div>
       </div>
@@ -547,7 +547,7 @@ let HideRecipeHandler=()=>{
       {/* Question 5 */}
       <div class="row mt-3" id="Question5">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
         <FontAwesomeIcon icon={faPlus} id="QuestionButtonPlus5" onClick={ShowQuestion5}/>
         <FontAwesomeIcon icon={faMinus} class="d-none" id="QuestionButtonMinus5" onClick={HideQuestion5}/>
           <p><b>How much storage will I need?</b></p>
@@ -555,7 +555,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row d-none" id="Answer5">
         <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <p>
           You can store meals for up to 7 days in your fridge and the remaining pouches in the freezer to keep them fresh. 
           It depends on your dog's individual calorie intake but it usually takes up the amount of space that a loaf of bread might.
@@ -565,7 +565,7 @@ let HideRecipeHandler=()=>{
       </div>
       <div class="row mb-5">
       <div class="col-md-3"></div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <hr id="Line5"/>
         </div>
       </div>
@@ -577,9 +577,9 @@ let HideRecipeHandler=()=>{
            <div className="row">
             <div className="col-md-4"></div>
             <div className="col-md-4">
-            <NavLink  to='/plans-3' type="button" className="btn  back"><i className="fa fa-angle-left"></i>BACK</NavLink>
+            <NavLink  to='/plans-3' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink to='/plans-4'  type="button" className="btn  float-end continue">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink to='/plans-4'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

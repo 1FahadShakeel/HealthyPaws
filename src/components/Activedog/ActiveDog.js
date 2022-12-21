@@ -191,13 +191,11 @@ const ActiveDog = () => {
 
           <div className="row">
             <div className="col-md-12 text-center">
-            <div class="form-check">
-                <label class="form-check-label" for="workingDog">
-                <input class="" type="checkbox" value="" id="workingDog"onClick={workingDogHandler} /> 
-                A working dog
-                </label>
+              <div class="checkDiv">
+              <input class="pt-5" type="checkbox" value="" id="workingDog"onClick={workingDogHandler} /> 
+            <label className='ml-1 p-0 m-0' id="WorkingDogLabel" for="workingDog">A working dog</label>
               </div>
-            </div>
+              </div>
           </div>
 
           {/* images */}
@@ -288,9 +286,9 @@ const ActiveDog = () => {
            <div className="row">
             <div className="col-md-4"></div>
             <div className="col-md-4">
-            <NavLink  to='/dog-Weight' type="button" className="btn  back"><i className="fa fa-angle-left"></i>BACK</NavLink>
+            <NavLink  to='/dog-Weight' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink onClick={""} to='/Allergies'  type="button" className="btn  float-end continue">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink onClick={""} to='/Allergies'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

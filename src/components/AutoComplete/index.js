@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
+import '../Breed.css';
 
 
 
@@ -69,8 +70,11 @@ const AutoComplete = ({
        <div class="row mt-3">
        
        <div class="col-md-12 text-center">
-         <input type="checkbox" id="BreedCheckBox" onClick={BreedChecked} />
-         <label id="BreedBoxText">I don't know his breed</label>
+         <div class="Shpac mb-2">
+          <input type="checkbox" id="BreedCheckBox" onClick={BreedChecked} />
+          <label id="BreedBoxText">I don't know his breed</label>
+        </div>
+
        </div>
       
      </div>

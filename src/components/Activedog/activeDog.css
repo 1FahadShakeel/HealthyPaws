@@ -1,7 +1,17 @@
+.checkDiv{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .dogDiv{
     display: inline-block;
     width: 150px;
     height:auto;  
+}
+#WorkingDogLabel{
+    font-weight: bold;
 }
 .main-div1{
 

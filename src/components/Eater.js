@@ -211,9 +211,9 @@ function Eater() {
            <div className="row">
             <div className="col-md-4"></div>
             <div className="col-md-4">
-            <NavLink  to='/Food-Type' type="button" className="btn  back"><i class="fa fa-angle-left"></i>BACK</NavLink>
+            <NavLink  to='/Food-Type' type="button" className="btn  back py-2"><i class="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink to='/Eating-goals'  type="button" className="btn  float-end continue">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink to='/Eating-goals'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

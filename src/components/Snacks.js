@@ -1,6 +1,4 @@
 import React from 'react'
-
-import "./snacks.css";
 import { NavLink } from "react-router-dom";
 
 
@@ -14,6 +12,14 @@ import snack1copy from "../images/Snack1-Copy.PNG";
 import snack2copy from "../images/Snack2-Copy.PNG";
 import snack3copy from "../images/Snack3-Copy.PNG";
 
+
+import dog1 from "../images/dog1.PNG";
+import dog2 from "../images/dog2.PNG";
+import dog3 from "../images/dog3.PNG";
+import colordog1 from "../images/colordog1.svg";
+import colordog2 from "../images/colordog2.svg";
+import colordog3 from "../images/colordog3.PNG";
+import "./snacks.css";
 
 const Snacks = () => {
 
@@ -138,13 +144,13 @@ const Snacks = () => {
 
           {/* images */}
 
-          <div className="row d-none" id='mainDivDis'>
+          <div className="row " id='mainDivDis'>
             <div className="col-md-3"></div>
             <div className="col-md-6 dogDis text-center py-3 ">
               <div id='skinnyDis' className='d-none'>
               <h4>Doesn't eat any</h4>
               </div>
-              <div id='justRightDis' className='d-none'>
+              <div id='justRightDis' className=''>
               <h4>Has some</h4>
               <p className='peraDis'>1-3 times a day</p>
               </div>
@@ -182,9 +188,9 @@ const Snacks = () => {
            <div className="row">
             <div className="col-md-4"></div>
             <div className="col-md-4">
-            <NavLink  to='/health-issues' type="button" className="btn  back"><i className="fa fa-angle-left"></i>BACK</NavLink>
+            <NavLink  to='/health-issues' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink to='/location'  type="button" className="btn  float-end continue">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink to='/location'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

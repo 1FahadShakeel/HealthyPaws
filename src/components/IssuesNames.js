@@ -69,8 +69,11 @@ const IssuesNames = ({
        <div class="row mt-3">
        
        <div class="col-md-12 text-center">
-         <input type="checkbox" id="BreedCheckBox" onClick={BreedChecked} />
-         <label id="BreedBoxText">I don't know health issues.</label>
+       <div class="Shpac mb-2">
+          <input type="checkbox" id="BreedCheckBox" onClick={BreedChecked} />
+          <label id="BreedBoxText">I don't know health issues.</label>
+        </div>
+         
        </div>
       
      </div>
