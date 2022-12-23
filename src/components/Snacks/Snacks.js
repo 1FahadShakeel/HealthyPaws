@@ -1,26 +1,27 @@
 import React from 'react'
-import dogFoot from"../../images/dogFoot.svg"
+import { NavLink } from "react-router-dom";
+
+
+
 import sweetPotato from "../../images/sweetPotato.svg";
 
-import { NavLink } from "react-router-dom";
-import "./bodyLook.css";
+import snack1 from "../../images/Snack1.PNG";
+import snack2 from "../../images/Snack2.PNG";
+import snack3 from "../../images/Snack3.PNG";
+import snack1copy from "../../images/Snack1-Copy.PNG";
+import snack2copy from "../../images/Snack2-Copy.PNG";
+import snack3copy from "../../images/Snack3-Copy.PNG";
 
-import dog1 from "../../images/dog1.PNG";
-import dog2 from "../../images/dog2.PNG";
-import dog3 from "../../images/dog3.PNG";
-import colordog1 from "../../images/colordog1.svg";
-import colordog2 from "../../images/colordog2.svg";
-import colordog3 from "../../images/colordog3.PNG";
+import "./snacks.css";
 
-localStorage.setItem("bodyLook", "justRight");
+const Snacks = () => {
 
-const BodyLook = () => {
 
   let dog1Handler=()=>{
 
-    // document.getElementById("dog1").classList.add("selectedDog");
-    // document.getElementById("dog3").classList.remove("selectedDog");
-    // document.getElementById("dog2").classList.remove("selectedDog");
+    document.getElementById("dog1").classList.add("selectedDog");
+    document.getElementById("dog3").classList.remove("selectedDog");
+    document.getElementById("dog2").classList.remove("selectedDog");
 
     document.getElementById("colordog1").classList.remove("d-none");
     document.getElementById("dog1Colorless").classList.add("d-none");
@@ -36,15 +37,16 @@ const BodyLook = () => {
     document.getElementById("mainDivDis").classList.remove("d-none");
 
     
-    localStorage.setItem("bodyLook", "skinny");
+    localStorage.setItem("snacks", "does not eat");
+  
 
   }
 
 
   let dog2Handler=()=>{
-    // document.getElementById("dog2").classList.add("selectedDog");
-    // document.getElementById("dog3").classList.remove("selectedDog");
-    // document.getElementById("dog1").classList.remove("selectedDog");
+    document.getElementById("dog2").classList.add("selectedDog");
+    document.getElementById("dog3").classList.remove("selectedDog");
+    document.getElementById("dog1").classList.remove("selectedDog");
 
     document.getElementById("dog2WithColor").classList.remove("d-none");
     document.getElementById("dog2Colorless").classList.add("d-none");
@@ -53,7 +55,7 @@ const BodyLook = () => {
     document.getElementById("colordog1").classList.add("d-none");
     document.getElementById("dog1Colorless").classList.remove("d-none");
 
-    localStorage.setItem("bodyLook", "justRight");
+    localStorage.setItem("snacks", "1-3 times a day");
 
     document.getElementById("skinnyDis").classList.add("d-none");
     document.getElementById("justRightDis").classList.remove("d-none");
@@ -64,9 +66,9 @@ const BodyLook = () => {
   }
   let dog3Handler=()=>{
 
-    // document.getElementById("dog3").classList.add("selectedDog");
-    // document.getElementById("dog1").classList.remove("selectedDog");
-    // document.getElementById("dog2").classList.remove("selectedDog");
+    document.getElementById("dog3").classList.add("selectedDog");
+    document.getElementById("dog1").classList.remove("selectedDog");
+    document.getElementById("dog2").classList.remove("selectedDog");
 
     document.getElementById("sizeColorDog3").classList.remove("d-none");
     document.getElementById("sizeDog3").classList.add("d-none");
@@ -76,7 +78,7 @@ const BodyLook = () => {
     document.getElementById("colordog1").classList.add("d-none");
     document.getElementById("dog1Colorless").classList.remove("d-none");
 
-    localStorage.setItem("bodyLook", "chubby");
+    localStorage.setItem("snacks", "4 times a day");
     document.getElementById("skinnyDis").classList.add("d-none");
     document.getElementById("justRightDis").classList.add("d-none");
     document.getElementById("chubbyDis").classList.remove("d-none");
@@ -85,18 +87,19 @@ const BodyLook = () => {
 
     
   }
-  return (
-    <>
 
-     <div className="container-fluid">
+
+
+
+  return (
+    <div className="container-fluid">
 
        {/* header */}
        <div className="row header py-5">
         <div className="col-md-2"></div>
         <div className="col-md-8">
-        <h3 className='text-center headerHeading'>What does <span>{localStorage.getItem("dogName")}</span>'s body look like?</h3>
-        <p className='headerPera1 text-center'>So we can send her the right amount of food.</p>
-        </div>
+        <h3 className='text-center headerHeading'>Does <span>{localStorage.getItem("dogName")}</span> get any treats or snacks?</h3>
+         </div>
         <div className="col-md-2"></div>
        </div>
           {/* header end */}
@@ -104,26 +107,27 @@ const BodyLook = () => {
          
 
           <h1 className="text-center mt-5">
-          ------------<span>{localStorage.getItem("dogName")}</span> is.------------
+          ---------- <span>{localStorage.getItem("dogName")}</span> is... ----------
           </h1>
 
           {/* images */}
+
           <div className="row text-center my-4">
 
             <div className='col-md-12'>
              
                 <div className='dogDiv ' id="dog1" onClick={dog1Handler}>
-                  <img className="img-fluid " src={dog1} alt="" id='dog1Colorless' />
-                  <img className="img-fluid d-none" id='colordog1' src={colordog1} alt="" />
+                  <img className="dogSize  " src={snack1copy} alt="" id='dog1Colorless' />
+                  <img className="dogSize1 d-none" id='colordog1' src={snack1} alt="" />
                   </div>
                 <div className='dogDiv ' id="dog2" onClick={dog2Handler}>
-                  <img className="img-fluid d-none" src={dog2} alt="" id='dog2Colorless' />
-                  <img className="img-fluid " src={colordog2} alt="" id='dog2WithColor' />
+                  <img className="dogSize d-none" src={snack2copy} alt="" id='dog2Colorless' />
+                  <img className="dogSize2 " src={snack2} alt="" id='dog2WithColor' />
 
                   </div>
                 <div className='dogDiv ' onClick={dog3Handler} id="dog3"> 
-                <img className="  img-fluid" id='sizeDog3' src={dog3} alt="" />
-                <img className="img-fluid d-none" id='sizeColorDog3' src={colordog3} alt="" />
+                <img className="dogSize  " id='sizeDog3' src={snack3copy} alt="" />
+                <img className="dogSize d-none" id='sizeColorDog3' src={snack3} alt="" />
                 </div>
 
             </div>
@@ -137,16 +141,15 @@ const BodyLook = () => {
             <div className="col-md-3"></div>
             <div className="col-md-6 dogDis text-center py-3 ">
               <div id='skinnyDis' className='d-none'>
-              <h4>A little skinny</h4>
-              <p className='peraDis'>Narrow waistline and you can clearly see her ribs. </p>
+              <h4>Doesn't eat any</h4>
               </div>
               <div id='justRightDis' className=''>
-              <h4>Just right</h4>
-              <p className='peraDis'>Visible waistline with some fat cover but her ribs are easy to feel.</p>
+              <h4>Has some</h4>
+              <p className='peraDis'>1-3 times a day</p>
               </div>
 
               <div id='chubbyDis' className='d-none'>
-              <h4>A bit chubby</h4>
+              <h4>Has lots</h4>
               <p className='peraDis'>Waistline is not visible and her ribs are tricky to feel.</p>
               </div>
               
@@ -172,25 +175,26 @@ const BodyLook = () => {
             </div>
 
 
+            
+
             <footer className=" footer  shadow py-4">
            <div className="row">
             <div className="col-md-4"></div>
             <div className="col-md-4">
-            <NavLink  to='/help' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
+            <NavLink  to='/health-issues' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink onClick={""} to='/dog-Weight'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink to='/location'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>
            </footer>
-
-
+        
 
 
     </div>
-    
-    </>
+         
+       
   )
 }
 
-export default BodyLook
+export default Snacks
