@@ -5,9 +5,7 @@ import { NavLink } from "react-router-dom";
 const CurrentlyEating = () => {
 
 
-
-let currentlyeatingHandler=()=>{
- 
+let Validation = Event =>{
     let arrayofcurrentlyEating = [];
         var markedCheckbox = document.getElementsByName("currentlyEating");
         for (var checkbox of markedCheckbox) {
@@ -19,6 +17,16 @@ let currentlyeatingHandler=()=>{
 
         localStorage.setItem("currentlyEating", arrayofcurrentlyEating);
         // console.log(arrayofcheckbox)
+
+        if((document.getElementById("checkboxOne").checked || document.getElementById("checkboxTwo").checked || document.getElementById("checkboxThree").checked || document.getElementById("checkboxFour").checked) == true)
+        {
+          // ---------- Let's Go ----------
+        }
+        else if(document.getElementById("checkboxOne").checked != true)
+        {
+          Event.preventDefault();
+          alert("Select any of the following Options!")
+        }
 }
 
 
@@ -48,23 +56,23 @@ let currentlyeatingHandler=()=>{
                <div className="row text-center my-5">
                 <div className="col-md-12">
                 <ul class="ks-cboxtags">
-                <li >
-                    <input type="checkbox" id="checkboxOne" value="Nothing"/>
+                <li>
+                    <input type="checkbox" id="checkboxOne" value="Dry" name="currentlyEating"/>
                     <label id="labelOne" for="checkboxOne">Dry</label>
                 </li>
 
                 <li >
-                    <input type="checkbox" id="checkboxTwo" value="Nothing"/>
+                    <input type="checkbox" id="checkboxTwo" value="Home-cooked" name="currentlyEating"/>
                     <label id="labelOne" for="checkboxTwo">Home-cooked</label>
                 </li>
 
                 <li >
-                    <input type="checkbox" id="checkboxThree" value="Nothing"/>
+                    <input type="checkbox" id="checkboxThree" value="Wet" name="currentlyEating"/>
                     <label id="labelOne" for="checkboxThree">Wet</label>
                 </li>
 
                 <li >
-                    <input type="checkbox" id="checkboxFour" value="Nothing"/>
+                    <input type="checkbox" id="checkboxFour" value="Raw" name="currentlyEating"/>
                     <label id="labelOne" for="checkboxFour">Raw</label>
                 </li>
                 </ul>
@@ -95,7 +103,7 @@ let currentlyeatingHandler=()=>{
             <div className="col-md-4">
             <NavLink  to='/Breed' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink onClick={currentlyeatingHandler} to='/Eating-type'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink onClick={Validation} to='/Eating-type'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

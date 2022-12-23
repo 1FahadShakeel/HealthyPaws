@@ -13,7 +13,20 @@ import "./dogWeight.css";
 import { NavLink } from "react-router-dom";
 import carrots2 from "../../images/carrots2.svg";
 
+const Validation = Event => {
+  if(document.getElementById("shpac").value == 0)
+  {
+    Event.preventDefault();
+    document.getElementById("shpac").classList.add("is-invalid");
+  }
+  else{
+    localStorage.setItem("dogWeight", document.getElementById("shpac").value)
+  }
+}
+
+
 function changeRampUpHire(){
+  document.getElementById("shpac").classList.remove("is-invalid");
   let employeeNumberRange= document.getElementById('customRange3');
   employeeNumberRange.oninput = function() {
       document.getElementById('shpac').value = this.value;
@@ -323,7 +336,7 @@ const DogWeight = () => {
           <div className="row mt-4">
             <div className="col-md-12">
               <div className='text-center'>
-                <input type="text" id='shpac' className='form-control text-center input-box' /><span className='mx-1'>Kg</span>
+                <input type="text" id='shpac' className='form-control text-center input-box' placeholder='50'/><span className='mx-1'>Kg</span>
               </div>
 
             </div>
@@ -370,7 +383,7 @@ const DogWeight = () => {
             <div className="col-md-12 text-center">
 
             <span>0Kg</span>
-            <input onChange={changeRampUpHire} className='inputRange'  type="range" class="form-range p-0 m-0" min="1" max="50" step="1" id="customRange3"/>
+            <input onChange={changeRampUpHire} type="range" class="form-range p-0 m-0" from='1' min="1" max="50" step="1" id="customRange3"/>
 
             <span>50Kg+</span>
 
@@ -401,7 +414,7 @@ const DogWeight = () => {
             <div className="col-md-4">
             <NavLink  to='/body-look' type="button" className="btn  back py-2"><i class="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink to='/Activity'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink to='/Activity' onClick={Validation} type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>
