@@ -3,9 +3,9 @@
 
 ## Run the following commands
 
-Git Clone "Project URL"
+### `Git Clone "https://github.com/1FahadShakeel/HealthyPaws.git" `
 
-cd HealthyPaws
+### `cd HealthyPaws`
 
 In the project directory, you can run:
 
