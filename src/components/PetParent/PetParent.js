@@ -2,9 +2,26 @@ import React from 'react';
 import './PetParent.css';
 import { NavLink } from "react-router-dom";
 
+import FreshFact1 from '../../images/FreshFact1.jpeg';
 
-
-import FreshFact1 from '../../images/FreshFact1.jpeg'
+const Validation = Event => {
+  if(document.getElementById("NameInput").value == "" || document.getElementById("EmailInput").value == "")
+  {
+    if(document.getElementById("NameInput").value == "")
+    {
+      Event.preventDefault();
+      document.getElementById("NameInput").classList.add("is-invalid");
+    }
+    else if(document.getElementById("EmailInput").value == "")
+    {
+      Event.preventDefault();
+      document.getElementById("EmailInput").classList.add("is-invalid");
+    }
+  }
+  else{
+    localStorage.setItem("PostCode", document.getElementById("PostCodeInput").value);
+  }
+}
 
 function PetParent() {
   return (
@@ -89,7 +106,7 @@ function PetParent() {
             <div className="col-md-4">
             <NavLink  to='/location' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink to='/plans-1'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink to='/plans-1' onClick={Validation} type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

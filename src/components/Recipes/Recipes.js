@@ -121,16 +121,15 @@ function Recipes() {
           <p id="MealsSpecialityRow">
             <p>All of our meals are:</p>
             <div class="row" id="MealsSpecialityRow">
-              <div class="col-md-1"></div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <img id="Meals" src={NoGrain} />
                 <p class="text-center">Grain Free</p>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <img id="Meals" src={NoNasies} />
                 <p class="text-center">No Nasties</p>
               </div>
-              <div class="col-md-3 ">
+              <div class="col-md-4 ">
                 <img id="Meals" src={GentleDigestion} />
                 <p class="text-center">Gentle Digestion</p>
               </div>

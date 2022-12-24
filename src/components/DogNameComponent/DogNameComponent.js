@@ -5,14 +5,22 @@ import './dogName.css'
 // import deleteIcon from "./deleteIcon.svg";
 
 const Validation = Event => {
-  if(document.getElementById("dogName1Id").value == "")
+
+  var letters = /^[A-Za-z]+$/;
+  if(document.getElementById("dogName1Id").value.match(letters) && document.getElementById("dogName1Id").value != "" 
+  && document.getElementById("dogName1Id").value.length <=20 )
   {
-    Event.preventDefault();
-    document.getElementById("dogName1Id").classList.add("is-invalid");
+    document.getElementById("dogName1Id").classList.add("is-valid");
+    localStorage.setItem("dogName", document.getElementById("dogName1Id").value)    
   }
   else{
-    document.getElementById("dogName1Id").classList.add("is-valid");
-    localStorage.setItem("dogName", document.getElementById("dogName1Id").value)
+    Event.preventDefault();
+    document.getElementById("dogName1Id").classList.add("is-invalid"); 
+    alert(`
+    Name couldn't be a number!
+    Name couldn't be greater than 20 characters
+    Name couldn't be empty
+    `)
   }
 }
 

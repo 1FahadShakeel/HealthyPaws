@@ -193,7 +193,7 @@ const ActiveDog = () => {
             <div className="col-md-12 text-center">
               <div class="checkDiv">
               <input class="pt-5" type="checkbox" value="" id="workingDog"onClick={workingDogHandler} /> 
-            <label className='ml-1 p-0 m-0' id="WorkingDogLabel" for="workingDog">A working dog</label>
+            <label className='ml-1 p-0 mx-2' id="WorkingDogLabel" for="workingDog">A working dog</label>
               </div>
               </div>
           </div>
@@ -218,8 +218,8 @@ const ActiveDog = () => {
                      <img id='dog3WithOutColor' className='dogSize' src={dogActive3Copy} alt="" />
                 </div>
                 <div className='dogDiv ' onClick={dog4Handler} id="dog3"> 
-                    <img id='dog4WithColor' className="dog4Size d-none" src={dogActive4} alt="" />
-                     <img id='dog4WithOutColor' className='dog4Size ' src={dogActive4Copy} alt="" />
+                    <img id='dog4WithColor' className="dog4Size " src={dogActive4} alt="" />
+                     <img id='dog4WithOutColor' className='dog4Size d-none' src={dogActive4Copy} alt="" />
                 </div>
                 <div className='dogDiv  ' onClick={dog5Handler} id="dog3"> 
                      <img id='dog5WithColor'  className="dog5Size d-none" src={dogActive5} alt="" />
@@ -233,31 +233,31 @@ const ActiveDog = () => {
 
           {/* images */}
 
-          <div className="row d-none" id='mainDivDis'>
+          <div className="row " id='mainDivDis'>
             <div className="col-md-2"></div>
             <div className="col-md-8 dogDis text-center py-3 ">
               <div id='snoozerDis' className='d-none'>
               <h4>A serial snoozer</h4>
-              <p className='peraDis'>Under 30min walks per day</p>
+              <p className='peraDis'>Under 30 min walks per day</p>
               </div>
               <div id='somewhatActiveDis' className='d-none'>
               <h4>Somewhat active</h4>
-              <p className='peraDis'>0.5 - 1hr walks per day</p>
+              <p className='peraDis'>0.5 - 1 hr walks per day</p>
               </div>
 
               <div id='activeDis' className='d-none'>
               <h4>Active</h4>
-              <p className='peraDis'>1-2hr walks per day</p>
+              <p className='peraDis'>1-2 hr walks per day</p>
               </div>
 
-              <div id='veryActiveDis' className='d-none'>
+              <div id='veryActiveDis' className=''>
               <h4>Very active</h4>
-              <p className='peraDis'>2-3hr walks per day</p>
+              <p className='peraDis'>2-3 hr walks per day</p>
               </div>
 
               <div id='fullOfEnergyDis' className='d-none'>
               <h4>Full of energy</h4>
-              <p className='peraDis'>More than 3hr walks per day</p>
+              <p className='peraDis'>More than 3 hr walks per day</p>
               </div>
               
             </div>

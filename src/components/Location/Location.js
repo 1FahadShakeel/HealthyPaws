@@ -4,6 +4,17 @@ import LocationDog from '../../images/LocationDog.PNG';
 import FreshFact6 from '../../images/FreshFact6.PNG';
 import { NavLink } from "react-router-dom";
 
+const Validation = Event => {
+  if(document.getElementById("PostCodeInput").value == "")
+  {
+    Event.preventDefault();
+    document.getElementById("PostCodeInput").classList.add("is-invalid")
+  }
+  else{
+    localStorage.setItem("PostCode", document.getElementById("PostCodeInput").value);
+  }
+}
+
 function Location() {
   return (
     <div class="container-fluid">
@@ -45,7 +56,7 @@ function Location() {
             <div class="col-md-3"></div>
             <div class="col-md-6 ">
                 <label>Your postcode</label><br/>
-                <input class="form-control p-0 m-0" placeholder="  e.g. 54000" id="PostCodeInput"/>
+                <input class="form-control m-0 px-2" placeholder="  e.g. 54000" id="PostCodeInput"/>
             </div>
             <div class="col-md-3"></div>
         </div>
@@ -87,7 +98,7 @@ function Location() {
             <div className="col-md-4">
             <NavLink  to='/snacks' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink to='/petParent'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink to='/petParent' onClick={Validation} type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>

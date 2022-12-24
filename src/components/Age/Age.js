@@ -5,8 +5,10 @@ import FreshFact3 from '../../images/FreshFact3.PNG';
 import { NavLink } from "react-router-dom";
 
 const Validation = Event => {
-  if(document.getElementById("PuppyInput1").value == "" && document.getElementById("PuppyInput2").value == "")
+  if((document.getElementById("PuppyInput1").value == "" || document.getElementById("PuppyInput2").value == "") ||
+  (parseFloat(document.getElementById("PuppyInput1").value) > 12 || parseFloat(document.getElementById("PuppyInput2").value > 4)))
   {
+    
         Event.preventDefault();
         document.getElementById("PuppyInput1").classList.add("is-invalid");
         document.getElementById("PuppyInput2").classList.add("is-invalid");
@@ -106,11 +108,13 @@ function Age() {
         <div class="col-md-12 text-center">
           <input class="form-control text-center " 
           placeholder='0' 
+          type="number"
           id="PuppyInput1"
           onFocus={ShowInputs}/>
           <label id="PuppyAge1"> months</label>
           <input class="form-control text-center" 
-          placeholder='0' 
+          placeholder='0'
+          type="number"
           id="PuppyInput2"
           onFocus={ShowInputs}/>
           <label id="PuppyAge2"> weeks</label>

@@ -8,7 +8,7 @@ const Validation = Event =>{
   if((document.getElementById("FoodieRadio").checked || document.getElementById("GoodEaterRadio").checked ||
      document.getElementById("FussyRadio").checked || document.getElementById("VeryFussyRadio").checked) == true)
     {
-      alert("Let's Go")
+      // alert("Let's Go")
     }
   else{
     Event.preventDefault();

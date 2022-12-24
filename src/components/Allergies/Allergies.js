@@ -14,6 +14,28 @@ function AllergiesDiv(){
     }
 }
 
+const Validation = Event => {
+  if((document.getElementById("checkboxOne").checked || document.getElementById("checkboxTwo").checked) == true)
+    {
+      alert("Let's Go");
+    }
+  else{
+    Event.preventDefault();
+    alert("Select any of the following Options");
+  }
+}
+
+const NothingFunction = () =>{
+  if(document.getElementById("checkboxOne").checked == true)
+      {
+        // alert("Uzair")
+        for(var i = 0; i < (document.getElementsByName("Allergies").length); i++)
+        {
+          document.getElementsByName("Allergies")[i].checked = false;
+        }
+        Event.preventDefault();
+      }
+} 
 
 function Allergies() {
   return (
@@ -47,57 +69,57 @@ function Allergies() {
         <div class="col-md-6 text-center">
         <ul class="ks-cboxtags SpinOption">
                 <li>
-                    <input type="checkbox" id="checkboxOne" value="Nothing" />
+                    <input type="checkbox" id="checkboxOne" value="Nothing" onClick={NothingFunction}/>
                     <label id="labelOne" for="checkboxOne">Nothing</label>
                 </li>
 
                 <li id="Shapaik">
-                    <input type="checkbox" id="checkboxTwo" value="Beef" />
+                    <input type="checkbox" id="checkboxTwo" value="Beef" name='Allergies'/>
                     <label for="checkboxTwo">Beef</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" id="checkboxThree" value="Fish" />
+                    <input type="checkbox" id="checkboxThree" value="Fish" name='Allergies'/>
                     <label for="checkboxThree">Fish</label>
                 </li>
                 
                 <li>
-                    <input type="checkbox" id="checkboxFour" value="Duck"/>
+                    <input type="checkbox" id="checkboxFour" value="Duck" name='Allergies'/>
                     <label for="checkboxFour">Duck</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" id="checkboxFive" value="Pork"/>
+                    <input type="checkbox" id="checkboxFive" value="Pork" name='Allergies'/>
                     <label for="checkboxFive">Pork</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" id="checkboxSix" value="Chicken" />
+                    <input type="checkbox" id="checkboxSix" value="Chicken" name='Allergies'/>
                     <label for="checkboxSix">Chicken</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" id="checkboxSeven" value="Turkey" />
+                    <input type="checkbox" id="checkboxSeven" value="Turkey" name='Allergies'/>
                     <label for="checkboxSeven">Turkey</label>
                 </li>
                 
                 <li>
-                    <input type="checkbox" id="checkboxEight" value="Lamb"/>
+                    <input type="checkbox" id="checkboxEight" value="Lamb" name='Allergies'/>
                     <label for="checkboxEight">Lamb</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" id="checkboxNine" value="Wild Boar"/>
+                    <input type="checkbox" id="checkboxNine" value="Wild Boar" name='Allergies'/>
                     <label for="checkboxNine">Wild Boar</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" id="checkboxTen" value="Guinea Fowl" />
+                    <input type="checkbox" id="checkboxTen" value="Guinea Fowl" name='Allergies'/>
                     <label for="checkboxTen">Guinea Fowl</label>
                 </li>
 
                 <li>
-                    <input type="checkbox" id="checkboxEleven" value="Vension" />
+                    <input type="checkbox" id="checkboxEleven" value="Vension" name='Allergies'/>
                     <label for="checkboxEleven">Vension</label>
                 </li>
             </ul>
@@ -155,7 +177,7 @@ function Allergies() {
             <div className="col-md-4">
             <NavLink  to='/Activity' type="button" className="btn  back py-2"><i className="fa fa-angle-left"></i>BACK</NavLink>
             
-             <NavLink onClick={""} to='/health-issues'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
+             <NavLink onClick={Validation} to='/health-issues'  type="button" className="btn  float-end continue py-2">CONTINUE <i className="fa fa-angle-right"></i></NavLink>
             </div>
             <div className="col-md-4"></div>
             </div>
